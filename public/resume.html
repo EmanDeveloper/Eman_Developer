@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eman Khadim — Résumé | Full-Stack MERN & AI Developer</title>
+    <meta
+      name="description"
+      content="Résumé of Eman Khadim, Full-Stack MERN & AI Developer specializing in scalable SaaS platforms, LLM/OCR systems, and real-time applications."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --ink: #0f172a;
+        --muted: #475569;
+        --light: #64748b;
+        --accent: #0e7490;
+        --line: #e2e8f0;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        background: #f1f5f9;
+        font-family: 'Inter', system-ui, -apple-system, sans-serif;
+        color: var(--ink);
+        -webkit-font-smoothing: antialiased;
+      }
+      .toolbar {
+        max-width: 820px;
+        margin: 0 auto;
+        padding: 18px 8px 0;
+        display: flex;
+        justify-content: flex-end;
+        gap: 10px;
+      }
+      .btn {
+        appearance: none;
+        border: 1px solid var(--accent);
+        background: var(--accent);
+        color: #fff;
+        font: inherit;
+        font-weight: 600;
+        font-size: 13px;
+        padding: 9px 16px;
+        border-radius: 8px;
+        cursor: pointer;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        gap: 7px;
+      }
+      .btn.ghost {
+        background: #fff;
+        color: var(--accent);
+      }
+      .btn:hover {
+        opacity: 0.9;
+      }
+      .page {
+        max-width: 820px;
+        margin: 14px auto 48px;
+        background: #fff;
+        padding: 48px 56px;
+        box-shadow: 0 10px 40px -12px rgba(15, 23, 42, 0.2);
+        border-radius: 4px;
+      }
+      header.top {
+        text-align: center;
+        border-bottom: 2px solid var(--ink);
+        padding-bottom: 16px;
+        margin-bottom: 22px;
+      }
+      h1 {
+        font-size: 34px;
+        margin: 0 0 6px;
+        letter-spacing: -0.5px;
+      }
+      .contact {
+        font-size: 13px;
+        color: var(--muted);
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px 14px;
+        justify-content: center;
+      }
+      .contact a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+      h2.section {
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 1.2px;
+        color: var(--accent);
+        border-bottom: 1px solid var(--line);
+        padding-bottom: 4px;
+        margin: 24px 0 12px;
+      }
+      p.summary {
+        font-size: 13.5px;
+        line-height: 1.6;
+        color: var(--muted);
+        margin: 0;
+      }
+      .skills-grid {
+        display: grid;
+        grid-template-columns: 130px 1fr;
+        gap: 4px 14px;
+        font-size: 13px;
+      }
+      .skills-grid dt {
+        font-weight: 700;
+        color: var(--ink);
+      }
+      .skills-grid dd {
+        margin: 0;
+        color: var(--muted);
+      }
+      .entry {
+        margin-bottom: 16px;
+      }
+      .entry-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 12px;
+      }
+      .entry-head .role {
+        font-weight: 700;
+        font-size: 14.5px;
+      }
+      .entry-head .date {
+        font-size: 12.5px;
+        color: var(--light);
+        white-space: nowrap;
+      }
+      .entry .org {
+        font-size: 13px;
+        color: var(--accent);
+        font-weight: 600;
+        margin: 1px 0 6px;
+      }
+      ul {
+        margin: 6px 0 0;
+        padding-left: 18px;
+      }
+      ul li {
+        font-size: 13px;
+        line-height: 1.55;
+        color: var(--muted);
+        margin-bottom: 4px;
+      }
+      .two-col {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px 28px;
+      }
+      .meta-line {
+        font-size: 13px;
+        color: var(--muted);
+        margin: 2px 0;
+      }
+      .meta-line strong {
+        color: var(--ink);
+      }
+      @media (max-width: 640px) {
+        .page {
+          padding: 28px 22px;
+        }
+        .skills-grid {
+          grid-template-columns: 1fr;
+        }
+        .two-col {
+          grid-template-columns: 1fr;
+        }
+      }
+      @media print {
+        body {
+          background: #fff;
+        }
+        .toolbar {
+          display: none;
+        }
+        .page {
+          box-shadow: none;
+          margin: 0;
+          padding: 0;
+          max-width: 100%;
+        }
+        h2.section {
+          break-after: avoid;
+        }
+        .entry {
+          break-inside: avoid;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="toolbar">
+      <a class="btn ghost" href="/">&#8592; Back to Portfolio</a>
+      <button class="btn" onclick="window.print()">&#8675; Download / Print PDF</button>
+    </div>
+
+    <main class="page">
+      <header class="top">
+        <h1>Eman Khadim</h1>
+        <div class="contact">
+          <span>+92 344-6010309</span>
+          <a href="mailto:memankhadim@gmail.com">memankhadim@gmail.com</a>
+          <a href="https://www.linkedin.com/in/eman-developer/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/EmanDeveloper" target="_blank" rel="noopener">GitHub</a>
+          <span>Sahiwal, Pakistan &middot; Open to Remote</span>
+        </div>
+      </header>
+
+      <section>
+        <h2 class="section">Professional Summary</h2>
+        <p class="summary">
+          Full-Stack Developer with proven experience delivering scalable, production-grade web
+          applications for international clients. Specialized in architecting end-to-end solutions
+          across React.js, Next.js, Node.js, Express.js, and MongoDB, with strong command of RESTful
+          API design, secure authentication, role-based access control (RBAC), and real-time systems.
+          Track record of building multi-tenant SaaS platforms, optimizing application performance,
+          and shipping features from concept to deployment within agile, remote engineering teams.
+        </p>
+      </section>
+
+      <section>
+        <h2 class="section">Technical Skills</h2>
+        <dl class="skills-grid">
+          <dt>Languages</dt>
+          <dd>JavaScript (ES6+), TypeScript, Python, SQL, HTML5, CSS3</dd>
+          <dt>Frontend</dt>
+          <dd>React.js, Next.js, Redux Toolkit, Tailwind CSS, Responsive Web Design</dd>
+          <dt>Backend</dt>
+          <dd>Node.js, Express.js, RESTful APIs, Socket.io, JWT Authentication, RBAC, NextAuth, Twilio</dd>
+          <dt>Databases</dt>
+          <dd>MongoDB, PostgreSQL, MySQL, Sequelize ORM, Redis, Supabase</dd>
+          <dt>DevOps &amp; Cloud</dt>
+          <dd>Git, GitHub, CI/CD, Docker, AWS (EC2, S3), Vercel, Netlify, Multer</dd>
+          <dt>AI / ML</dt>
+          <dd>Hugging Face, OCR Integration, LLM Integration</dd>
+          <dt>Practices</dt>
+          <dd>SaaS Architecture, Microservices, Agile/Scrum, Performance Optimization</dd>
+        </dl>
+      </section>
+
+      <section>
+        <h2 class="section">Experience</h2>
+        <div class="entry">
+          <div class="entry-head">
+            <span class="role">Full-Stack MERN Developer (Remote)</span>
+            <span class="date">June 2025 &ndash; Present</span>
+          </div>
+          <div class="org">UK Client</div>
+          <ul>
+            <li>
+              Architected and delivered core frontend and backend features for a multi-tenant SaaS
+              platform as part of a cross-functional remote engineering team, accelerating feature
+              delivery across multiple release cycles.
+            </li>
+            <li>
+              Engineered responsive admin and vendor dashboards with React.js, Redux Toolkit, and
+              Tailwind CSS, improving usability and reducing render times through optimized component
+              architecture.
+            </li>
+            <li>
+              Built secure authentication and role-based access control (RBAC) across multiple user
+              portals, safeguarding sensitive data and enforcing granular, scalable permissions.
+            </li>
+            <li>
+              Designed and developed RESTful APIs with Node.js and Express.js, integrating Redis
+              caching to cut response times and Twilio for automated communication workflows.
+            </li>
+            <li>
+              Architected relational database schemas and optimized complex SQL queries, streamlining
+              staff management and scheduling operations.
+            </li>
+            <li>
+              Developed a real-time internal chat system with Socket.io, enabling instant
+              collaboration across distributed teams.
+            </li>
+            <li>
+              Delivered staff job-assignment and shift-tracking modules that automated workforce
+              coordination and reduced manual scheduling overhead.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="section">Projects</h2>
+
+        <div class="entry">
+          <div class="entry-head">
+            <span class="role">DiagnoXpert &mdash; AI Healthcare Platform</span>
+            <span class="date"><a href="https://diagno-xpert.vercel.app/" target="_blank" rel="noopener">Live Demo</a></span>
+          </div>
+          <ul>
+            <li>Developed a healthcare web platform with Next.js featuring separate doctor and patient dashboards.</li>
+            <li>Implemented secure authentication and role-based access control (RBAC) for multiple user types.</li>
+            <li>Integrated Tesseract.js OCR to extract structured medical data from reports and uploaded images.</li>
+            <li>Built an AI-powered pipeline using Llama3-OpenBioLLM to generate personalized diet plans and medical guidance.</li>
+            <li>Developed a real-time doctor-patient chat system and appointment booking functionality.</li>
+          </ul>
+        </div>
+
+        <div class="entry">
+          <div class="entry-head">
+            <span class="role">Easy Finder Platform</span>
+            <span class="date"><a href="https://easy-finder-nu.vercel.app/" target="_blank" rel="noopener">Live Demo</a></span>
+          </div>
+          <ul>
+            <li>Built a full-stack product comparison platform with Next.js and Supabase.</li>
+            <li>Enabled cross-website comparison of laptops, phones, and tablets with country- and price-based filtering.</li>
+            <li>Engineered scalable search and filtering systems and optimized database queries for faster performance.</li>
+          </ul>
+        </div>
+
+        <div class="entry">
+          <div class="entry-head">
+            <span class="role">Real-Time Chat Application</span>
+            <span class="date"><a href="https://theta-konnect.netlify.app/" target="_blank" rel="noopener">Live Demo</a></span>
+          </div>
+          <ul>
+            <li>Developed a full-stack real-time messaging application using React.js, Node.js, Express.js, and Socket.io.</li>
+            <li>Implemented JWT authentication and protected routes for secure access and robust session management.</li>
+            <li>Designed a fully responsive interface with Tailwind CSS optimized for mobile and desktop.</li>
+          </ul>
+        </div>
+
+        <div class="entry">
+          <div class="entry-head">
+            <span class="role">Portfolio Management Platform</span>
+            <span class="date"><a href="https://eman-portfolio-nu.vercel.app/" target="_blank" rel="noopener">Live Demo</a></span>
+          </div>
+          <ul>
+            <li>Built a responsive, full-stack portfolio platform with React.js, Node.js, Express.js, and MongoDB.</li>
+            <li>Engineered a modern, performance-optimized UI with seamless navigation and dynamic content management.</li>
+            <li>Implemented a scalable full-stack architecture with clean API integration and reusable components.</li>
+          </ul>
+        </div>
+      </section>
+
+      <div class="two-col">
+        <section>
+          <h2 class="section">Education</h2>
+          <p class="meta-line"><strong>BS in Computer Science</strong></p>
+          <p class="meta-line">COMSATS University Islamabad (CUI), Sahiwal Campus</p>
+          <p class="meta-line">CGPA: 3.27 / 4.0</p>
+        </section>
+
+        <section>
+          <h2 class="section">Certifications</h2>
+          <ul>
+            <li>Introduction to MySQL &mdash; DataCamp</li>
+            <li>Introduction to Artificial Intelligence &mdash; DataCamp</li>
+          </ul>
+        </section>
+      </div>
+
+      <section>
+        <h2 class="section">Leadership &amp; Activities</h2>
+        <ul>
+          <li>
+            Led a team of 4 developers as Final Year Project Team Lead, owning frontend, backend, AI
+            integration, OCR systems, deployment, and task coordination.
+          </li>
+          <li>
+            Competed in university-level coding competitions, strengthening problem-solving and
+            algorithmic skills.
+          </li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
